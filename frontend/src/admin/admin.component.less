@@ -1,0 +1,87 @@
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+html
+{
+
+ -webkit-background-size:cover;
+ -o-background-size:cover;
+ -moz-background-size:cover;
+ background-size:cover;
+ margin-top: -19px;
+ margin-left: -19px;
+ margin-right: -19px;
+}
+
+.template{
+    position:relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,sans-serif;
+    padding: 1rem;
+}
+.container{
+    width: calc(768px - 1rem);
+    background: #0f2229;
+    color: #fff;
+    padding: 16px;
+    border-radius: 10px;
+}
+.container h4{
+   font-weight: 400; 
+   font-size: 1.5rem;
+   text-align: center;
+}
+.container .form{
+    position: relative;
+    width: 100%;
+    margin: 2rem 0;
+}
+.container .form input{
+    width: 100%;
+    background: #1f3841;
+    border: none;
+    outline: none;
+    padding: 15px 145px 15px 12px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.container .form button{
+    position: absolute;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #0f2229;
+    right: 3px;
+    top: 3px;
+    cursor: pointer;
+}
+.container .nameBox{
+  position: relative;  
+  background: #1f3841;
+  border-radius: 10px;
+  padding: 12px;
+}
+.container .nameBox span{
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    letter-spacing: .3px;
+}
+.btn{
+    margin-left: 100px;
+}

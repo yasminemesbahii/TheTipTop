@@ -1,0 +1,150 @@
+:host {
+
+  display: flex;
+
+  flex-direction: column;
+
+  height: 100%;
+
+}
+
+mat-drawer {
+
+  width: 350px;
+
+}
+
+mat-drawer-container {
+
+  height: 100%;
+
+}
+
+mat-drawer-content {
+
+  padding: 20px;
+
+}
+:host mat-icon{
+   
+  vertical-align: auto;
+  margin-right: 20px;
+}
+.profile-card {
+text-align: center;
+padding: 20px 20px 20px 20px;
+
+}
+.profile-card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  
+}
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #1446daa5;
+    color: white;
+  }
+  
+
+.searchBox {
+    position: absolute;
+    left: 16%;
+    transform:  translate(-10%,30%);
+    background: #1446daa5;
+    height: 40px;
+    border-radius: 40px;
+    margin-top: -32px;
+}
+
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : #1446daa5;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
+}
+.button {
+    background-color: #2f3640;
+    color: white;
+    border-radius: 50%;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button1:hover {
+    background-color: #1446daa5; 
+    color: black; 
+    border: 2px solid #a6b1a6;
+  }
+  body{
+   
+    min-height:100vh; 
+    min-width: 100vh;
+    -webkit-background-size:cover;
+    -o-background-size:cover;
+    -moz-background-size:cover;
+    background-size:cover;
+  }

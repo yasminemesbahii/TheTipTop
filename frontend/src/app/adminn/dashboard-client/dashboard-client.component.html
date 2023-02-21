@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+  <html>
+    <app-header (toggleSideBarForMe)="sideBarToggler()"></app-header>
+    <mat-drawer-container>
+        <mat-drawer mode="side" [opened]="sideBarOpen">
+            <app-sidebarclient></app-sidebarclient>
+        </mat-drawer>
+        <mat-drawer-content>
+            <router-outlet></router-outlet>
+  <body>
+  <table id="customers" style="text-align: center;">
+    <tr>
+      <th style="text-align: center;">Mes Gains</th>
+    </tr>
+    <tr *ngFor="let lot of Lots; index as i">
+        <td>{{lot}}</td>
+    </tr>
+  </table>
+  
+  </body>
+  
+        </mat-drawer-content>
+    </mat-drawer-container>
+    <app-footer></app-footer>
+  </html>
+  
+  
+  

@@ -1,0 +1,46 @@
+<lib-ng-toast></lib-ng-toast>
+<app-header (toggleSideBarForMe)="sideBarToggler()"></app-header>
+
+    <mat-drawer-container>
+        <mat-drawer mode="side" [opened]="sideBarOpen">
+            <app-sidebar-employer></app-sidebar-employer>
+        </mat-drawer>
+        <mat-drawer-content>
+            <router-outlet></router-outlet>
+    
+    <div class="searchBox">
+
+        <input class="searchInput"type="text"  [(ngModel)]="filterTerm" placeholder="Search...">
+        <button class="searchButton" href="#">
+            <i class="material-icons">
+                search
+            </i>
+        </button>
+    </div>
+    <body>
+    <table id="customers">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Nom</th>
+          <th scope="col">Prenom</th>
+          <th scope="col">Email</th>
+          <th scope="col">Lot</th>
+          <th scope="col">Etat_obtention</th>
+          <th scope="col"></th>
+        </tr>
+      
+        <tr *ngFor="let user of users | filter: filterTerm; let i = index">
+          <td>{{ user._id }}</td>
+          <td>{{ user.nom }}</td>
+          <td>{{ user.prenom}}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.idLot[i]["description"]}}</td>
+          <td>{{user.Etat_obtention}}</td>
+          <td><button class="button button1" (click)="addEtat_obtention(user._id)">Recu</button></td>
+        </tr>
+     
+    </table>
+</body>
+</mat-drawer-content>
+</mat-drawer-container>
+<app-footer></app-footer>  

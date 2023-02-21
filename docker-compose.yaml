@@ -1,0 +1,24 @@
+services:
+       frontend:
+           container_name: front
+           image: projectfront
+           restart: always
+           build: .
+           ports:
+             - '4100:4100'
+       backend:
+           container_name: backend
+           image: projectbackend
+           restart: always
+           build: .
+           ports:
+             - "7777:7777"
+           links:
+             - database
+       database:
+             container_name: mongo
+             image: mongo
+             volumes:
+               - ./data:/data/db
+             ports:
+               - '27017:27017'

@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+<app-header (toggleSideBarForMe)="sideBarToggler()"></app-header>
+<lib-ng-toast></lib-ng-toast>
+	<mat-drawer-container>
+		<mat-drawer mode="side" [opened]="sideBarOpen">
+			<app-sidebarclient></app-sidebarclient>
+		</mat-drawer>
+		<mat-drawer-content>
+			<router-outlet></router-outlet>
+  <body>
+<div class="wrapper">
+  <form action="#" class="card-content">
+    <div class="container">
+      <div class="image">
+        <i class="fas fa-envelope"></i>
+      </div>
+      <h1>S'abonner</h1>
+      <p>Abonnez-vous à notre lettre d'information et restez informé</p>
+    </div>
+    <div class="form-input">
+      <label for="email"></label>
+      <input type="email" [(ngModel)]="email"  [ngModelOptions]="{standalone: true}" placeholder="Your Email" required>
+      <button class="subscribe-btn"   (click)="AddSubscribe()">S'abonner</button>
+    </div>
+  </form>
+</div>
+</body>
+</mat-drawer-content>
+</mat-drawer-container>
+<app-footer></app-footer>

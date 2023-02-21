@@ -1,0 +1,26 @@
+<mat-nav-list>
+    <div class="profile-card">
+        <div class="header">
+        <h2>{{nomUser}} {{prenomUser}}</h2>
+        <h3>{{emailUser}}</h3>
+        </div>
+
+        <img src="https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png" alt="Admin">
+    </div>
+    <mat-divider></mat-divider>
+
+    <h2 matSubheader>Pages</h2>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/home">Home</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/user">Participation</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/MesGains">Mes Gains</a>
+    <a  mat-list-item routerLinkActive="list-item-active" (click)="deleteAcc()">
+        <mat-icon>delete</mat-icon>
+        Supprimer Compte
+    </a>
+
+    <mat-divider></mat-divider>
+
+    
+   
+</mat-nav-list>
+

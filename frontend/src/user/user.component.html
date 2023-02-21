@@ -1,0 +1,34 @@
+<app-header (toggleSideBarForMe)="sideBarToggler()"></app-header>
+<lib-ng-toast></lib-ng-toast>
+	<mat-drawer-container>
+		<mat-drawer mode="side" [opened]="sideBarOpen">
+			<app-sidebarclient></app-sidebarclient>
+		</mat-drawer>
+		<mat-drawer-content>
+			<router-outlet></router-outlet>
+							 <div>
+								 <h2 class="border1"> <strong><h1 style="text-align: center; color:orange ;"><strong>RAPPELLE!</strong></h1><br> jeu-concours Thé Tiptop! 
+									Soyez 100% gagnant et gagner des cadeaux exceptionnels!<br>
+									<br>
+									Afin de participer au tirage au sort, visitez l'une de nos 10 boutiques en France
+									et acheter nos produits pour avoir un ticket <br> <br> de caisse d'une valeur minimum de 49€ !
+									Des thés détox, infusion ou des thés aux fruits savoureux vous attendent en magasins.<br> <br>
+									Faites entrer les 10 chiffres qui se trouvent sur votre facture, et jouer pour obtenir des super cadeaux!<br> <br>
+									
+									Réclamez votre infuseur de thé, vos 100g de thé détox, infusion ou signature et de super coffret découverte <br><br> en magasins ou en ligne!
+									Inscrivez-vous vite! Vous n'avez que 30 jours avant se faire le grand tirage au sort.<br><br>
+									La personne choisie pourra profiter d'un an de thé de la valeur de 360€ ! Soyez nombreux ! 
+									
+									Avec Thé TipTop, vous serez au TOP!</strong></h2>
+									<label for="number"><strong>veuillez saisi votre reference pour participer au jeu concours</strong></label>
+									<div><input type="text" [(ngModel)]="RefP" maxlength="10">
+									<button (click)="fetchRef_P()" class="btn3">Participé(e)</button></div>
+									<ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "square-jelly-box" [fullScreen] = "true">
+										<p style="color: white" > Chargement... </p>
+									</ngx-spinner>
+									
+								
+							 </div>
+			</mat-drawer-content>
+		</mat-drawer-container>
+	<app-footer></app-footer>

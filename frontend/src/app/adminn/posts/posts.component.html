@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    
+
+    <title>Styling Input Date</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+</head>
+<body id="global" id="contenu">
+    <h1><strong> une nouvelle session :</strong> </h1>
+    <div class="v2"></div>
+   <input type="date"  [(ngModel)]="DateSelected">
+   <div class="button" style="font-size: 25px; text-align: center,;" (click)="fetchDateS()"><strong><p>Ajouter</p></strong> </div>
+   <div class="button2" style="font-size: 25px; text-align: center,;" (click)="lancerUnesession()"><strong><p>Rénisialiser</p></strong> </div>
+
+   <div id="wrap" class="input">
+    <section class="input-content">
+      <h2>Nombre de tickets</h2>
+      <div class="input-content-wrap">
+        <dl class="inputbox">
+          <dt class="inputbox-title">Entre le nombre</dt>
+          <dd class="inputbox-content">
+            <input id="input0" type="number" [(ngModel)]="totalTicket" required/>
+            <label for="input0">Nombre</label>
+            <span class="underline"></span>
+          </dd>
+        </dl>
+        <div class="btns">
+            <button class="btn btn-confirm" (click)="addTotalTicket()">Valider</button>
+        </div>
+      </div>
+
+    </section>
+  </div>
+  <div class="vl"></div>
+  
+</body>
+
+
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  
+	<title>The Tip Top</title>
+	
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+	<!----hero Section start---->
+
+	<div class="hero">
+		<nav>
+			<h2 class="logo">The Tip<span>Top</span></h2>
+			<ul>
+				<li routerLink="/home"><a >Home</a></li>
+				<li><a href="#About">A Propos</a></li>
+				<li><a href="#Gains">Gains</a></li>
+        <li ><a href="#About">Registration</a></li>
+				<li><a href="#Reclamation">Reclamation</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+            
+ 
+ <li *ngIf="isLogin"  routerLink="/login"><a  class="btn" >Connexion <mat-icon>lock</mat-icon></a></li>
+ <li *ngIf="connecterUser" routerLink="/user"> <a  class="btn">Participer <mat-icon>lock_open</mat-icon></a></li>
+ <li *ngIf="connecterAdmin"  routerLink="/admin"><a  class="btn" >Admin <mat-icon>lock_open</mat-icon></a></li>
+ <li *ngIf="connecterEmployer"  routerLink="/employer"><a  class="btn" >Employer <mat-icon>lock_open</mat-icon></a></li>
+ 
+
+            
+			
+		</nav>
+
+		<div class="content">
+			<h4>Bienvenu chez,</h4>
+      <br>
+			<h1>The Tip<span>Top</span></h1>
+    <br>
+			<div class="newslatter">
+                <h3>Abonner-vous :</h3>
+				<form>
+					<input type="email" [(ngModel)]="email"  [ngModelOptions]="{standalone: true}" id="mail" placeholder="Enter Your Email" required>
+					<button type="submit" name="submit" style="margin-top:10px ;"  (click)="AddSubscribe()">Abonner</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!----About section start---->
+	<section id="About" class="about">
+		<div class="main">
+            <div class="card5">
+				<div class="pra">
+					<p></p>
+				</div>
+			</div>
+			<div class="about-text">
+				<h2>A propos le jeu</h2>
+				<h5>Soyez 100% gagnant et gagner  <span>des cadeaux exceptionnels!</span></h5>
+				<p>Afin de participer au tirage au sort, visitez l'une de nos 10 boutiques en France
+                    et acheter nos produits pour avoir un ticket de caisse d'une valeur minimum de 49€ !
+                    Des thés détox, infusion ou des thés aux fruits savoureux vous attendent en magasins.<br> 
+                    Faites entrer les 10 chiffres qui se trouvent sur votre facture, et jouer pour obtenir des super cadeaux!<br> 
+                    
+                    Réclamez votre infuseur de thé, vos 100g de thé détox, infusion ou signature et de super coffret découverte <br> en magasins ou en ligne!
+                    Inscrivez-vous vite! Vous n'avez que 30 jours avant se faire le grand tirage au sort.<br>
+                    La personne choisie pourra profiter d'un an de thé de la valeur de 360€ ! Soyez nombreux ! 
+                    
+                    Avec Thé TipTop, vous serez au TOP!</p>
+				<button type="button" routerLink="/sign-up">Inscrivez-vous</button>
+			</div>
+		</div>
+	</section>
+
+	<!-----service section start----------->
+	<div id="Gains" class="service">
+		<div class="title">
+			<h2>Gains Disponible</h2>
+		</div>
+
+		<div class="box">
+			<div class="card">
+				<div class="pra">
+					
+				</div>
+                <p></p>
+			</div>
+
+			<div class="card1">
+				<div class="pra">
+					<p></p>
+				</div>
+			</div>
+
+			<div class="card2">
+				<div class="pra">
+					<p></p>
+				</div>
+			</div>
+
+            <div class="card3">
+				<div class="pra">
+					<p></p>
+				</div>
+			</div>
+
+            <div class="card4">
+				<div class="pra">
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+    <div id="Reclamation" class="contact-me">
+    <form style="margin-top: -400px;" (ngSubmit)="OnSubmit()">
+        <div class="container contact">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="contact-info">
+                        <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
+                        <h2>Reclamation</h2>
+                        <h4 style="color: rgb(245, 242, 242);">noublier pas d'indiqué votre reference de ticket s'il vous plait dans votre message</h4>
+                    </div>
+                </div>
+                
+                <div class="col-md-9">
+                    <div class="contact-form">
+                        <div class="form-group">
+                          <label class="control-label col-sm-2" for="fname">nom:</label>
+                          <div class="col-sm-10">          
+                            <input  [(ngModel)]="nom" [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="nom" placeholder="Enter First Name" name="nom" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-sm-2" for="lname">prenom:</label>
+                          <div class="col-sm-10">          
+                            <input [(ngModel)]="prenom" [ngModelOptions]="{standalone: true}"  type="text" class="form-control" id="prenom" placeholder="Enter Last Name" name="prenom" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-sm-2" for="email">Email:</label>
+                          <div class="col-sm-10">
+                            <input [(ngModel)]="email1" [ngModelOptions]="{standalone: true}" type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Telephone:</label>
+                            <div class="col-sm-10">
+                              <input [(ngModel)]="telephone" [ngModelOptions]="{standalone: true}" type="telephone" class="form-control" id="telephone" placeholder="Enter email" name="telephone" required>
+                            </div>
+                          </div>
+                        <div class="form-group">
+                          <label class="control-label col-sm-2" for="comment">Message:</label>
+                          <div class="col-sm-10">
+                            <textarea [(ngModel)]="message" [ngModelOptions]="{standalone: true}" class="form-control" rows="5" id="comment" required></textarea>
+                          </div>
+                        </div>
+                        <div class="form-group">        
+                          <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+	<!------footer start--------->
+	<footer id="contact">
+		<p>Mention Légale</p>
+        <p>Information sur l’éditeur :</p>
+		<p>L’application http://dsp-archiwebo21-ym-ee-ma-ya.fr est éditée par Furious Ducks, 
+            elle est intégralement et exclusivement financée par Thé TipTop, 
+            Siège social de Thé TipTop:
+            18 rue Léon Frot
+            75011 Paris
+            Tél : +33 1 23 40 60 00
+            </p>
+            <p>Information sur l’hébergeur :</p>
+            <p>L'hébergeur du Site est la société Google, dont le siège social se trouve à 
+                1600 Amphitheatre Parkway, Mountain View, CA 94043, Etats-Unis.
+                </p>
+                <p>Accès au site :</p>
+                <p>L’accès au site est possible n’importe où, à tout moment, 7j/7, 24h/24. Sauf en cas de maintenance ou de réparation, qu'elle soit programmée ou non.
+                    En cas de suspension, ou d'interruption du site, l'éditeur ne sera pas responsable des conséquences.
+                    </p>
+		<div class="social">
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-dribbble"></i></a>
+		</div>
+		<p class="end">Copy All rights reserved 2022</p>
+	</footer>
+    <div class="cookiebox" *ngIf="cookiebox">
+        <div class="txtbox">
+            <span>en utilisant notre site, vous reconnaissez avoir lu et compris notre politique en matière de cookies, notre politique de confidentialité et nos conditions d'utilisation</span>
+        </div>
+        <div class="btnbox">
+            <button class="btn1" (click)="Decline()">Décline</button>
+            <button class="btn2" (click)="Allow()" >Autorise les cookies</button>
+        </div>
+    </div>
+</body>
+</html>

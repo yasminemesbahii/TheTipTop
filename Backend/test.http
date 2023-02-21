@@ -1,0 +1,3 @@
+curl --request GET \
+--url 'https://us8.api.mailchimp.com/3.0/' \
+--user 'anystring:939f8a7e0c0028a07dd08d3150502c06-us8'

@@ -1,0 +1,29 @@
+
+    <app-header (toggleSideBarForMe)="sideBarToggler()"></app-header>
+    <mat-drawer-container>
+        <mat-drawer mode="side" [opened]="sideBarOpen">
+            <app-sidebarclient></app-sidebarclient>
+        </mat-drawer>
+        <mat-drawer-content>
+            <router-outlet></router-outlet>
+ <html>
+<body>
+    <div class="confetti">
+        
+            <div  *ngIf="iscompleted1"  class="text1" ></div>
+
+            <div  *ngIf="iscompleted2" class="text2" > </div>
+       
+            <div *ngIf="iscompleted3"  class="text3" > </div>
+       
+            <div  *ngIf="iscompleted4" class="text4" > </div>
+       
+            <div *ngIf="iscompleted5"  class="text5"  > </div>
+
+    </div>
+</body>
+</html>
+</mat-drawer-content>
+</mat-drawer-container>
+
+<app-footer></app-footer>

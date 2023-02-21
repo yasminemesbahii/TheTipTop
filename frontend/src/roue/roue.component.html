@@ -1,0 +1,48 @@
+<html>
+  <app-header></app-header>
+  <div id=container>
+    <div id=flip>
+   <div><div>{{current}}</div></div>
+   <div><div>Début</div></div>
+   <div><div>Date</div></div> 
+  </div>
+    <br>
+    <div id=flip>
+      <div><div>pour participé(e)</div></div>
+      <div><div>{{delay}} jours</div></div>
+      <div><div>il reste</div></div>
+    </div>
+    <br>
+    <div id=flip>
+      <div><div>{{given}}</div></div>
+      <div><div>Fin</div></div>
+      <div><div>Date</div></div> 
+     </div> 
+  </div>
+  
+<div class="center">
+ <ngx-wheel
+  #wheel
+  width='400'
+  height='400'
+  spinDuration='8'
+  [items]='items'
+  [innerRadius]='20'
+  [spinAmount]='10'
+  [textOrientation]='textOrientation'
+  [textAlignment]='textAlignment'
+  pointerStrokeColor='red'
+  pointerFillColor='gold'
+  disableSpinOnClick='false'
+  [idToLandOn]='idToLandOn'
+  (onSpinComplete)='after()'
+  ></ngx-wheel>
+  <br>
+  <div>
+    <button class="button-33"  (click)="spin()">Jouer</button>
+  </div>
+</div>
+</html>
+<app-footer></app-footer>
+
+

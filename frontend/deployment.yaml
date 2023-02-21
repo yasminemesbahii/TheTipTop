@@ -1,0 +1,37 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-deployment
+  labels:
+    app: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app:  frontend
+    spec:
+      containers:
+      - name: front
+        image: elkouria/frontend
+        ports:
+        - containerPort: 4100
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: front-service
+spec:
+  selector:
+    app:  frontend
+  type: LoadBalancer
+  ports:
+  - protocol: TCP
+    port: 4100
+    targetPort: 4100
+    nodePort: 31120
+    
