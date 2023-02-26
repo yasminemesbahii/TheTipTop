@@ -12,4 +12,4 @@ RUN apt-get update && \
 COPY . /usr/src/app
 RUN mkdir -p /data/db
 EXPOSE 7777 27017
-CMD ["sh", "-c", "mongo & node index.js"]
+CMD ["sh", "-c", "mongod & node index.js"]
