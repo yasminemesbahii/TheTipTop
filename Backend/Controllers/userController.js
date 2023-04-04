@@ -280,8 +280,8 @@ exports.insertByIdLot = async (req,res)=>{
     const lot = await new Lots({
       
         // _id : mongoose.Types.ObjectId,
-       nom : test,
-       description : test,
+       nom : "test",
+       description : "test",
        
      }).save()
      //console.log(id);
