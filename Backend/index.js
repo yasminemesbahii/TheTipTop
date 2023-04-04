@@ -37,4 +37,5 @@ app.use("/api", apiRoutes);
 app.listen(port, () => {
   console.log("Server en ligne port 7777");
 });
-module.exports={app}
+db = mongoose.connection
+module.exports={app, db}
