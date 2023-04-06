@@ -13,7 +13,7 @@ import { NgToastService } from 'ng-angular-popup'
 export class LoginComponent implements OnInit {
   loginUserForm : FormGroup;
     email1='admin@gmail.com' 
-    password1='Admin1234'
+    password1='TipTopBOSSnice'
   
   email:any;
    password :any;
