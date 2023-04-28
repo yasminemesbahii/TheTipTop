@@ -32,7 +32,7 @@
 			<h2 class="logo">The Tip<span>Top</span></h2>
 			<ul>
 				<li routerLink="/home"><a >Home</a></li>
-				<li><a href="#About">A Propos</a></li>
+				<li><a href="#About">A propos</a></li>
 				<li><a href="#Gains">Gains</a></li>
         <li ><a href="#About">Registration</a></li>
 				<li><a href="#Reclamation">Reclamation</a></li>
@@ -41,7 +41,7 @@
             
  
  <li *ngIf="isLogin"  routerLink="/login"><a  class="btn" >Connexion <mat-icon>lock</mat-icon></a></li>
- <li *ngIf="connecterUser" routerLink="/user"> <a  class="btn">Participer <mat-icon>lock_open</mat-icon></a></li>
+ <li *ngIf="connecterUser" routerLink="/user"> <a  class="btn">Participation <mat-icon>lock_open</mat-icon></a></li>
  <li *ngIf="connecterAdmin"  routerLink="/admin"><a  class="btn" >Admin <mat-icon>lock_open</mat-icon></a></li>
  <li *ngIf="connecterEmployer"  routerLink="/employer"><a  class="btn" >Employer <mat-icon>lock_open</mat-icon></a></li>
  
@@ -56,10 +56,10 @@
 			<h1>The Tip<span>Top</span></h1>
     <br>
 			<div class="newslatter">
-                <h3>Abonner-vous :</h3>
+                <h3>Abonnez-vous :</h3>
 				<form>
 					<input type="email" [(ngModel)]="email"  [ngModelOptions]="{standalone: true}" id="mail" placeholder="Enter Your Email" required>
-					<button type="submit" name="submit" style="margin-top:10px ;"  (click)="AddSubscribe()">Abonner</button>
+					<button type="submit" name="submit" style="margin-top:10px ;"  (click)="AddSubscribe()">S'abonner</button>
 				</form>
 			</div>
 		</div>
@@ -94,7 +94,7 @@
 	<!-----service section start----------->
 	<div id="Gains" class="service">
 		<div class="title">
-			<h2>Gains Disponible</h2>
+			<h2>Gains disponible</h2>
 		</div>
 
 		<div class="box">
@@ -138,21 +138,21 @@
                 <div class="col-md-3">
                     <div class="contact-info">
                         <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
-                        <h2>Reclamation</h2>
-                        <h4 style="color: rgb(245, 242, 242);">noublier pas d'indiqué votre reference de ticket s'il vous plait dans votre message</h4>
+                        <h2>Réclamation</h2>
+                        <h4 style="color: rgb(245, 242, 242);">N'oubliez pas d'indiquer le numéro de votre ticket dans votre message</h4>
                     </div>
                 </div>
                 
                 <div class="col-md-9">
                     <div class="contact-form">
                         <div class="form-group">
-                          <label class="control-label col-sm-2" for="fname">nom:</label>
+                          <label class="control-label col-sm-2" for="fname">Nom:</label>
                           <div class="col-sm-10">          
                             <input  [(ngModel)]="nom" [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="nom" placeholder="Enter First Name" name="nom" required>
                           </div>
                         </div>
                         <div class="form-group">
-                          <label class="control-label col-sm-2" for="lname">prenom:</label>
+                          <label class="control-label col-sm-2" for="lname">Prénom:</label>
                           <div class="col-sm-10">          
                             <input [(ngModel)]="prenom" [ngModelOptions]="{standalone: true}"  type="text" class="form-control" id="prenom" placeholder="Enter Last Name" name="prenom" required>
                           </div>
@@ -164,7 +164,7 @@
                           </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-sm-2" for="email">Telephone:</label>
+                            <label class="control-label col-sm-2" for="email">Téléphone:</label>
                             <div class="col-sm-10">
                               <input [(ngModel)]="telephone" [ngModelOptions]="{standalone: true}" type="telephone" class="form-control" id="telephone" placeholder="Enter email" name="telephone" required>
                             </div>
@@ -190,7 +190,7 @@
 	<footer id="contact">
 		<p>Mention Légale</p>
         <p>Information sur l’éditeur :</p>
-		<p>L’application http://dsp-archiwebo21-ym-ee-ma-ya.fr est éditée par Furious Ducks, 
+		<p>L’application https://f2i-ao21b-ym-mel.fr est éditée par Furious Ducks, 
             elle est intégralement et exclusivement financée par Thé TipTop, 
             Siège social de Thé TipTop:
             18 rue Léon Frot

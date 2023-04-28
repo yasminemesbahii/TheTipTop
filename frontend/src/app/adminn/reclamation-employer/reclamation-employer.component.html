@@ -23,14 +23,14 @@
             <div style="margin-left: 50px;" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" >
                 <div fxFlex="60" >
                     <table id="customers" style="margin-left: 100px; margin-top: 50px;" >
-                        <h2 style="text-align: center;margin-left: 500px;">Reclamations</h2>
+                        <h2 style="text-align: center;margin-left: 500px;">Réclamations</h2>
                         <tr >
-                         <th>Reclamation</th>
-                         <th>Prenom</th>
+                         <th>Réclamation</th>
+                         <th>Prénom</th>
                           <th>Nom</th>
                           <th>Email</th>
-                          <th>Telephone</th>
-                          <th>Etat_repond</th>
+                          <th>Téléphone</th>
+                          <th>Statut</th>
                           <th></th>
                         </tr>
                         <tr *ngFor="let e of emails">
@@ -40,7 +40,7 @@
                           <td>{{e.email }}</td>
                           <td>{{e.telephone }}</td>
                           <td>{{e.Etat_repond}}</td>
-                          <td><button class="button button1" (click)="addEtat_Repond(e._id)">Repond</button></td>
+                          <td><button class="button button1" (click)="addEtat_Repond(e._id)">Réponse envoyé</button></td>
                         </tr>
                        
                       </table> 
