@@ -1,23 +1,35 @@
-import { Component, OnInit, ViewChild,ElementRef} from '@angular/core';
+import { Component, OnInit,ElementRef} from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { response } from 'express';
 import { ApiAppService } from '../../Service/api-app.service';
 //import { ElementRef }from '@angular/core' ;
 import { Router } from '@angular/router';
 import swal from "sweetalert2";
+import { ViewChild } from '@angular/core';
+import { MatDrawer } from '@angular/material/sidenav';
+
+
 @Component({
   selector: 'app-addempolyer',
   templateUrl: './addempolyer.component.html',
   styleUrls: ['./addempolyer.component.less']
 })
 export class AddempolyerComponent implements OnInit {
-  sideBarOpen = true;
+  @ViewChild('sidebar') sidebar: MatDrawer;
+  sideBarOpen = false;
+  closeSidebar() {
+    this.sidebar.close();
+  }
   genreValues =[
     {name: 'Homme' , value : 'home'},
     {name: 'Femme' , value : 'femme'},
     {name: 'Autre' , value : 'autre'},
 
 ]
+
+
+
+  
 UserRegistrationForm : FormGroup
   constructor(public apiApp : ApiAppService, public router : Router) { 
     this.UserRegistrationForm = new FormGroup({

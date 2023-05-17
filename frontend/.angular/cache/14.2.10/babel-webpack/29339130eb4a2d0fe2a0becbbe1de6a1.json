@@ -1,1 +1,0 @@
-{"ast":null,"code":"/*\r\n * Public API Surface of ngx-wheel\r\n */\nexport * from './lib/ngx-wheel.component';\nexport * from './lib/ngx-wheel.module';","map":null,"metadata":{},"sourceType":"module"}

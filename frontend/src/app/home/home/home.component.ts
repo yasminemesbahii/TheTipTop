@@ -49,6 +49,13 @@ TokenAdmin:any=localStorage.getItem('TokenAdmin');
      this.TesteEncoursConnecter();
      this.Check();
 
+    // window.addEventListener('scroll', () => {
+    //  const content = document.querySelector('.content') as HTMLElement;
+    //  const rect = content.getBoundingClientRect();
+    //  content.style.position = 'fixed';
+    //  content.style.top = `${rect.top}px`;
+    //})
+
   }
   OnSubmit(){
     this.api.sendMessage(this.nom,this.prenom,this.email1,this.telephone,this.message).subscribe(data=>{
@@ -132,5 +139,15 @@ TokenAdmin:any=localStorage.getItem('TokenAdmin');
       })
     })  
 }
+
+myFunction() {
+  var x = document.getElementById("mynavbar");
+  if (x.className === "nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav";
+  }
+}
+
 
 }

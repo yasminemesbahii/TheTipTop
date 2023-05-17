@@ -19,8 +19,25 @@ en magasins ou sur notre site.">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<style>
+    body, html {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    
+    .mat-drawer-container {
+      overflow-x: hidden;
+    }
+    
+    .example-form {
+      overflow-x: hidden;
+    }
+  </style>
+
 </head>
-<app-header (toggleSideBarForMe)="sideBarToggler()"></app-header>
+<app-header (toggleSideBarForMe)="sideBarToggler()"(click)="sidebar.close()"></app-header>
+<body>
 <mat-drawer-container>
     <mat-drawer mode="side" [opened]="sideBarOpen">
         <app-sidebar></app-sidebar>
@@ -28,9 +45,9 @@ en magasins ou sur notre site.">
     <mat-drawer-content>
         <router-outlet></router-outlet>
 		<section class="vh-100">
-			<div class="container" style="padding-top:  5rem;">
+			<div class="container" >
 				<mat-card>
-				<mat-card-title style="text-align: center;">Ajouter Employer</mat-card-title>
+				<mat-card-title style="text-align: center;" (click)="sidebar.close()">Ajouter un employé</mat-card-title>
 					<form class="example-form" [formGroup]="UserRegistrationForm" (ngSubmit)="onSubmit()" >
 						
 							<div class="container py-5 h-100">
@@ -95,7 +112,7 @@ en magasins ou sur notre site.">
 					<div class="row">
 						<div class="col-md-6">
 							<br>
-							<button mat-raised-button color="primary" style="width: 100%;" type="submit">Ajouter</button>
+							<button mat-raised-button color="primary" style="width: 100%;" type="submit" >Ajouter</button>
 			
 						</div>
 							<div class="col-md-6" >
@@ -115,11 +132,12 @@ en magasins ou sur notre site.">
 				</mat-card>
 			
 			
-			</div></section>
+			</div>
+		</section>
     </mat-drawer-content>
 	
 </mat-drawer-container>
-
+</body>
 
 <app-footer></app-footer>
 
