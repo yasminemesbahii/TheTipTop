@@ -292,10 +292,22 @@ p{
 .input-content .btns .btn:hover, .input-content .btns .btn:focus {
   transform: translateY(-3px);
 }
+
+
 .input-content .btns .btn-confirm {
   border: 1px solid #2962ff;
   background: #2962ff;
   color: #fff;
+  width: 9.375em; /* Adjust the width as needed */
+  height: 2.875em; /* Adjust the height as needed */
+}
+
+/* Responsive Modifications */
+@media (max-width: 768px) {
+  .input-content .btns .btn-confirm {
+    width: 100%; /* Set the button width to 100% for smaller screens */
+    height: 3em; /* Adjust the height as needed */
+  }
 }
 @media only screen and (max-width: 768px) {
   html {
