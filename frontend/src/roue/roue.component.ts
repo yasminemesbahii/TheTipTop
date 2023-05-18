@@ -149,7 +149,7 @@ export class RoueComponent implements OnInit {
                       }
                       else{
                        
-                            alert('ce gain est remporté deja Rejouez à nouveau!')
+                            alert('Vous avez déjà gagné ce cadeau, rejouez!')
                              location.reload();
                             //this.conteur1=0
                             // this.conteur2=0
@@ -159,7 +159,7 @@ export class RoueComponent implements OnInit {
                       }
 
   }else{
-    alert('Session Terminer!');
+    alert('Session terminer!');
   }
     }
     redirecttoaction(){
@@ -215,13 +215,13 @@ export class RoueComponent implements OnInit {
         this.service.iscompleted2=true;
         //alert('vous avez gagné une boite de 100g dun thé détox ou dinfusion')
         
-        this.Gain='une boite de 100g dun thé détox ou dinfusion';
+        this.Gain='une boite de 100g de thé détox ou dinfusion';
         this.svaeGain();
         this.conteur2++
         this.conteurTicket++
         this.save2();
         this.saveTicketCounter();
-        swal.fire('Félicitation','vous avez gagné une boite de 100g dun thé détox ou dinfusion','info').then(v=>{
+        swal.fire('Félicitation','vous avez gagné une boite de 100g de thé infusion ou détox','info').then(v=>{
           if(v.value){
             this.redirecttoaction();
           }
@@ -235,7 +235,7 @@ export class RoueComponent implements OnInit {
         this.service.iscompleted3=true;
         //alert('vous avez gagné une boite de 100g dun thé signature')
       
-        this.Gain='une boite de 100g dun thé signature';
+        this.Gain='une boite de 100g de thé signature';
         this.svaeGain();
         this.conteur3++
         this.conteurTicket++
@@ -243,7 +243,7 @@ export class RoueComponent implements OnInit {
         this.saveTicketCounter();
       //  this.save();
        // console.log(this.conteur3);
-       swal.fire('Félicitation','vous avez gagné une boite de 100g dun thé signature','info').then(v=>{
+       swal.fire('Félicitation','vous avez gagné une boite de 100g de thé signature','info').then(v=>{
         if(v.value){
           this.redirecttoaction();
         }
@@ -256,7 +256,7 @@ export class RoueComponent implements OnInit {
         this.service.iscompleted4=true;
         //alert('vous avez gagné un coffret découverte dune valeur de 39$')
        
-        this.Gain='un coffret découverte dune valeur de 39$';
+        this.Gain='un coffret découverte d une valeur de 39$';
         this.svaeGain();
         this.conteur4++
         this.conteurTicket++
@@ -264,7 +264,7 @@ export class RoueComponent implements OnInit {
         this.saveTicketCounter();
        // this.save();
         //console.log(this.conteur4);
-        swal.fire('Félicitation','vous avez gagné un coffret découverte dune valeur de 39$','info').then(v=>{
+        swal.fire('Félicitation','vous avez gagné un coffret découverte d une valeur de 39$','info').then(v=>{
           if(v.value){
             this.redirecttoaction();
           }
@@ -285,7 +285,7 @@ export class RoueComponent implements OnInit {
         this.save5();
         this.saveTicketCounter();
        // console.log(this.conteur5);
-       swal.fire('Félicitation','vous avez gagné un coffret découverte dune valeur de 69$','info').then(v=>{
+       swal.fire('Félicitation','vous avez gagné un coffret découverte d une valeur de 69$','info').then(v=>{
         if(v.value){
         this.redirecttoaction();
         }

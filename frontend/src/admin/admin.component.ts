@@ -39,7 +39,7 @@ export class AdminComponent implements OnInit {
   
     
     nameQty(){
-     document.querySelector('.nameList').innerHTML ='le gagnant d`un an de thé d`une valeur de 360$ C`est :' + this.getName();
+     document.querySelector('.nameList').innerHTML ='le gagnant est :' + this.getName();
     
    }
    fetchDateS(){
@@ -72,7 +72,7 @@ export class AdminComponent implements OnInit {
   addTotalTicket() {
     this.service.addtotaltciket(this.totalTicket)
       .subscribe(data => {
-        alert('les tickets à bien creer')
+        alert('Tickets créés avec succès')
         console.log(data)
         localStorage.setItem('NombreTickets',this.totalTicket);
       })  
