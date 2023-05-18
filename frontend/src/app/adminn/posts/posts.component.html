@@ -15,8 +15,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
     <!--Stylesheet-->
+    <style>
+      body, html {
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+      </style>
+
 </head>
-<body id="global" id="contenu">
+<body id="global" id="contenu" class="scroll-container">
     <h1><strong> Nouvelle session :</strong> </h1>
     <div class="v2"></div>
    <input type="date"  [(ngModel)]="DateSelected">
@@ -24,7 +31,7 @@
    <div class="button2" style="font-size: 25px; text-align: center,;" (click)="lancerUnesession()"><strong><p>Rénisialiser</p></strong> </div>
 
    <div id="wrap" class="input">
-    <section class="input-content">
+    <section class="input-content scroll-container">
       <h2>Nombre de tickets</h2>
       <div class="input-content-wrap">
         <dl class="inputbox">
