@@ -30,7 +30,7 @@ export class PostsComponent implements OnInit {
    addTotalTicket() {
     this.service.addtotaltciket(this.totalTicket)
       .subscribe(data => {
-        alert('les tickets à bien creer')
+        alert('les tickets ont bien été crée')
         console.log(data)
         localStorage.setItem('NombreTickets',this.totalTicket);
       })  
