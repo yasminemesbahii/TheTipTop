@@ -12,9 +12,10 @@ html
  -o-background-size:cover;
  -moz-background-size:cover;
  background-size:cover;
- margin-top: -19px;
- margin-left: -19px;
- margin-right: -19px;
+ margin-top: -2,5%;
+ margin-left: -0%;
+ margin-right: 0%;
+ overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .scroll-container {
@@ -23,14 +24,14 @@ html
 
 input[type="date"]{
     background-color: #0080ff;
-    padding: 20px;
+    padding: 2%;
     position: absolute;
     transform: translate(-70%,-50%);
-    top: 15%;
+    top: 10%;
     left: 50%;
     font-family: "Roboto Mono",monospace;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 3,9vw;
     border: none;
     outline: none;
     border-radius: 5px;
@@ -47,45 +48,80 @@ input[type="date"]{
 .button {
   border: 2px solid #d2bdff;
   background-color: #0080ff;
-  height: 50px;
-  width: 140px;
   border-radius: 4px;
   position: relative;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
-  top: 15%;
-  left: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px; /* Add margin bottom to create spacing between the buttons */
+  margin-top: 50px;
+  max-width: 100%;
+ // margin-left: 330px;
 }
+
 .button2 {
   border: 2px solid #d2bdff;
   background-color: #0080ff;
-  height: 50px;
-  width: 170px;
   border-radius: 4px;
   position: relative;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
-  top: 7%;
-  left: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px; /* Add margin bottom to create spacing between the buttons */
+  max-width: 100%;
+  //margin-left: 330px;
 }
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+  /* Styles for screens larger than 768px */
+  .button {
+    height: 60px;
+    width: 200px;
+  }
+
+  .button2 {
+    height: 60px;
+    width: 240px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Styles for screens smaller than 768px */
+  .button {
+    height: 12vw;
+    width: 40vw;
+  }
+
+  .button2 {
+    height: 12vw;
+    width: 48vw;
+  }
+}
+
+
 p{
   text-align: center;
-  font-size: 25px;
+  font-size: 2,5vw;
   margin: auto;
   display: inline-block;
-  padding: 10px 25px;
+  padding: 2% 5%;
   
 }
 .h1{
-    margin-left: 20px ;
+    margin-left: 2% ;
 }
 
 #wrap {
-  top: 8%;
-  margin-left: 25%;
-  width: 70%;
+  top: 4%;
+  margin-left: 12,5%;
+  width: 75%;
   max-width: 500px;
-  margin-top: 120px;
+  margin-top: 30px;
  
 }
 
@@ -97,63 +133,114 @@ p{
   margin-left: 0px;
   width: 43%;
   height: 338px;
-  background: #161af1;
+  //background: #161af1;
 }
 
 
 .input-content {
   position: relative;
-  padding: 44px 55px;
-  background: #fff;
+  padding: 5px 15px;
+  background: #e0dede;
   z-index: 10;
+  width:90%;
+  border-radius: 2%;
+  //margin-left: 300px;
+  margin: 0 auto; /* Center the element horizontally */
+  //margin-top: 20vh; /* Adjust the margin-top value to vertically center the element */
 }
+
+
+/* Media Queries */
+@media only screen and (max-width: 767px) {
+  /* Styles for screens smaller than 768px */
+
+  html, body {
+    //width: 100%;
+    //max-width: 100vw;
+    overflow-x: hidden; /* Prevent horizontal scrolling on mobile devices */
+  }
+
+
+  .input-content {
+    margin-top: 10vh; /* Adjust the margin-top value for better mobile centering */
+  }
+}
+
 .input-content h2 {
-  padding-bottom: 45px;
-  font-size: 1.625em;
+  padding-bottom: 3%;
+  font-size: 2,5vw;
   font-weight: bold;
   vertical-align: middle;
 }
 .input-content h2 span {
   display: inline-block;
-  margin-left: 10px;
-  padding: 5px 6px 3px;
   border: 1px solid #ffca00;
   border-radius: 4px;
   font-size: 0.85rem;
   vertical-align: middle;
   color: #ffca00;
+  margin-left: 0%;
+  padding: 1% 1.2% 0.6%;
+  
 }
 .input-content .inputbox {
   overflow-x: hidden;
   position: relative;
-  padding: 15px 0 28px 200px;
+  padding: 2% 0 4% 10%;
 }
 .input-content .inputbox-title {
   position: absolute;
-  top: 15px;
+  
   left: 0;
   width: 200px;
-  height: 30px;
-  color: #666;
+
+  color: #2c0ab6;
   font-weight: bold;
-  line-height: 30px;
+  margin-bottom: 10%;
+
+  top: 1.5%;
+  height: -7vw;
+  line-height: -7vw;
 }
 .input-content .inputbox-content {
   position: relative;
   width: 100%;
+  display: flex; /* Add flexbox display */
+  flex-direction: column; /* Arrange input boxes vertically */
 }
 .input-content .inputbox-content input {
-  width: 100%;
-  height: 30px;
+  width: 60%; //100%
   box-sizing: border-box;
-  line-height: 30px;
-  font-size: 14px;
   border: 0;
   background: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ae3737;
   outline: none;
   border-radius: 0;
+  height: 3vw;
+  line-height: 3vw;
+  font-size: 2vw; //talle du nombre a saisir
+
 }
+
+
+/* Media Queries */
+@media only screen and (max-width: 767px) {
+  .input-content .inputbox-content input {
+    font-size: 4vw; /* Adjust the font size for smaller screens using relative units */
+    height: 8vw; /* Increase the height for smaller screens */
+    line-height: 8vw; /* Adjust the line height to match the height */
+  }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 767px) {
+  .input-content {
+    margin-top: 10vh;
+    width: 95%; /* Adjust the width to fill a slightly smaller portion of the screen on mobile devices */
+    font-size: 3vw;
+  }
+}
+
 .input-content .inputbox-content input:focus ~ label, .input-content .inputbox-content input:valid ~ label {
   color: #2962ff;
   transform: translateY(-20px);
@@ -186,19 +273,21 @@ p{
   transition: all 200ms ease-out;
 }
 .input-content .btns {
-  padding: 30px 0 0 200px;
+  padding: 6% 0 0 10%;
 }
 .input-content .btns .btn {
   display: inline-block;
   margin-right: 2px;
-  padding: 10px 25px;
+  
   background: none;
   border: 1px solid #c0c0c0;
   border-radius: 2px;
   color: #666;
-  font-size: 1.125em;
+  margin-bottom: 20%;
   outline: none;
   transition: all 100ms ease-out;
+  padding: 2% 5%;
+  font-size: 1.125vw;
 }
 .input-content .btns .btn:hover, .input-content .btns .btn:focus {
   transform: translateY(-3px);
@@ -208,4 +297,54 @@ p{
   background: #2962ff;
   color: #fff;
 }
-   
+@media only screen and (max-width: 768px) {
+  html {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .button,
+  .button2 {
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #wrap {
+    top: 8%;
+    margin-left: 10%;
+    width: 80%;
+    max-width: none;
+    margin-top: 60px;
+  }
+
+  .input::before {
+    height: auto;
+  }
+
+  .input-content .inputbox {
+    padding-left: 15px;
+  }
+
+  .input-content .inputbox-title {
+    position: static;
+    width: auto;
+    height: auto;
+    margin-bottom: 100px;
+  }
+
+  .input-content .inputbox-content {
+    padding-left: 0;
+  }
+
+  .input-content .inputbox-content .underline {
+    width: 100%;
+  }
+
+  .input-content .btns {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+ 
