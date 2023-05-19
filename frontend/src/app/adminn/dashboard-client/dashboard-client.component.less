@@ -1,91 +1,83 @@
 #customers {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 60%;
-    margin-left: 250px;
-    margin-top: 20px;
-    text-align: center;
-    
-  }
-  
-  #customers td, #customers th {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-  }
-  
-  #customers tr:nth-child(even){background-color: #f2f2f2;}
-  
-  #customers tr:hover {background-color: #ddd;}
-  
-  #customers th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #1446daa5;
-    color: white;
-  }
-  :host {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
 
-    display: flex;
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
 
-    flex-direction: column;
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
-    height: 100%;
+#customers tr:hover {
+  background-color: #ddd;
+}
 
-  }
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #1446daa5;
+  color: white;
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
 mat-drawer {
-
-    width: 350px;
-
-  }
+  width: 100%;
+  max-width: 350px;
+}
 
 mat-drawer-container {
-
-    height: 100%;
-
-  }
-
-  mat-drawer-content {
-
-    padding: 20px;
-
-  }
-  :host mat-icon{
-     
-    vertical-align: auto;
-    margin-right: 20px;
+  height: 100%;
 }
+
+mat-drawer-content {
+  padding: 20px;
+}
+
+:host mat-icon {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
 .profile-card {
   text-align: center;
-  padding: 20px 20px 20px 20px;
-  
+  padding: 20px;
 }
-.profile-card img{
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      border-radius: 50%;
-    
+
+.profile-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
 }
+
 ul li {
+  list-style: none;
+}
 
-    list-style: none;
+footer {
+  padding: 5px;
+}
 
-  }
-  footer {
-
-    padding: 5px;
-
-  }
-  body{
-    
-    min-height:100vh; 
-    min-width: 100vh;
-    
-    -webkit-background-size:cover;
-    -o-background-size:cover;
-    -moz-background-size:cover;
-    background-size:cover;
-  }
+body {
+  min-height: 100vh;
+  min-width: 100vh;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
