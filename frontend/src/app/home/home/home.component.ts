@@ -59,7 +59,7 @@ TokenAdmin:any=localStorage.getItem('TokenAdmin');
   }
   OnSubmit(){
     this.api.sendMessage(this.nom,this.prenom,this.email1,this.telephone,this.message).subscribe(data=>{
-      swal.fire('votre Reclamation envoyer','success').then((res)=>{
+      swal.fire('Votre réclamation a bien été envoyé.',':)').then((res)=>{
         if(res.value){
           window.location.reload();
         }
@@ -119,7 +119,7 @@ TokenAdmin:any=localStorage.getItem('TokenAdmin');
  Allow(){
    this.coockie.set('email',this.emailUser,{expires:1})
    this.coockie.set('nom',this.nomUser,{expires:2})
-   this.coockie.set('prenom',this.prenomUser,{expires:3})
+   this.coockie.set('prénom',this.prenomUser,{expires:3})
    this.cookiebox=false;
  }
  Decline(){
@@ -132,7 +132,7 @@ TokenAdmin:any=localStorage.getItem('TokenAdmin');
   this.service.Subscribed(this.email)
     .subscribe(data => {
       console.log(data)
-      swal.fire('Merci pour votre abonnement','Souscrit avec succès','success').then((res)=>{
+      swal.fire('Vous êtes désormais abonné à notre newsletter.','Merci!',).then((res)=>{
           if(res.value){
             window.location.reload();
           }
