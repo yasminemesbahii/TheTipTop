@@ -3,4 +3,4 @@ User-agent: *
 Disallow: /login/
 Disallow: /admin/
 
-Sitemap: https://f2i-ao21b-ym-mel.fr/sitemap.xml
+sitemap: https://f2i-ao21b-ym-mel.fr/sitemap.xml
