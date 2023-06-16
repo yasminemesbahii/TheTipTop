@@ -40,8 +40,8 @@ const routes: Routes = [
  {path:'ReseauxSo',component:AboutusComponent},
  {path:'home',component:HomeComponent},
  {path:'',redirectTo:'home',pathMatch:'full'},
- {path: 'robots.txt', redirectTo: 'assets/robots.txt', pathMatch: 'full'},
- {path: 'sitemap.xml', redirectTo: 'assets/sitemap.xml', pathMatch: 'full'},
+ //{path: 'robots.txt', redirectTo: 'assets/robots.txt', pathMatch: 'full'},
+ //{path: 'sitemap.xml', redirectTo: 'assets/sitemap.xml', pathMatch: 'full'},
  {path:'admin',
 
     component:DefaultComponent,
