@@ -1,6 +1,0 @@
-# robots.txt
-User-agent: *
-Disallow: /login/
-Disallow: /admin/
-
-sitemap: https://f2i-ao21b-ym-mel.fr/sitemap.xml
