@@ -2,55 +2,64 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-  <meta
-  name="description"
-  content="Thé Tiptop lance un jeu-concours à l'occasion de l'ouverture 
-  de notre dixième boutique à Nice! Jouez et gagnez de multiples cadeaux 
-  en magasins ou sur notre site.">
-    
 
-    <title>Styling Input Date</title>
-    <!--Google Font-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
-    <!--Stylesheet-->
-    <style>
-      html {
-        max-width: 100%;
-        overflow-x: hidden;
-      }
-      </style>
+  <meta name="description"
+        content="Thé Tiptop lance un jeu-concours à l'occasion de l'ouverture
+  de notre dixième boutique à Nice! Jouez et gagnez de multiples cadeaux
+  en magasins ou sur notre site.">
+
+
+  <title>Styling Input Date</title>
+  <!--Google Font-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+  <!--Stylesheet-->
+  <style>
+    html {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+  </style>
 
 </head>
-<body id="global" id="contenu" class="scroll-container">
-    <h1><strong> Nouvelle session :</strong> </h1>
-    <div class="v2"></div>
-   <input type="date"  [(ngModel)]="DateSelected">
-   <div class="button" style="font-size: 25px; text-align: center,;" (click)="fetchDateS()"><strong><p>Ajouter</p></strong> </div>
-   <div class="button2" style="font-size: 25px; text-align: center,;" (click)="lancerUnesession()"><strong><p>Rénisialiser</p></strong> </div>
+<body id="global" id="contenu" class="card p-3 scroll-container">
 
-   <div id="wrap" class="input">
-    <section class="input-content scroll-container">
+  <div class="d-flex justify-content-around">
+    <h1><strong> Nouvelle session :</strong> </h1>
+    <input type="date" class="btn btn-primary" [(ngModel)]="DateSelected">
+  </div>
+
+  <div class="v2"></div>
+
+
+  <div class="d-flex justify-content-around mt-4">
+    <div class="btn btn-primary" style="font-size: 25px; text-align: center,;" (click)="fetchDateS()"><strong><p>Ajouter</p></strong> </div>
+    <div class="btn btn-primary" style="font-size: 25px; text-align: center,;" (click)="lancerUnesession()"><strong><p>Rénisialiser</p></strong> </div>
+  </div>
+
+
+
+  <div id="wrap" class="row m-auto mt-5">
+    <div class="input-content scroll-container col-md-4">
       <h2>Nombre de tickets</h2>
       <div class="input-content-wrap">
         <dl class="inputbox">
           <dt class="inputbox-title">Saisir le nombre</dt>
           <dd class="inputbox-content">
-            <input id="input0" type="number" [(ngModel)]="totalTicket" required/>
-            <!-- <label for="input0">Nombre</label> -->
+            <input id="input0" type="number" [(ngModel)]="totalTicket" required />
+            <!--<label for="input0">Nombre</label>-->
             <span class="underline"></span>
           </dd>
         </dl>
-        <div class="btns">
-            <button class="btn btn-confirm" (click)="addTotalTicket()">Valider</button>
+        <div class="text-center">
+          <button class="btn btn-primary btn-confirm" (click)="addTotalTicket()">Valider</button>
         </div>
       </div>
 
-    </section>
+    </div>
   </div>
   <div class="vl"></div>
-  
+
 </body>
 
 

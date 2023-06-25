@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatDrawer } from '@angular/material/sidenav';
 import { ApiAppService } from 'src/app/Service/api-app.service';
 
 @Component({
@@ -8,11 +9,9 @@ import { ApiAppService } from 'src/app/Service/api-app.service';
 })
 export class DashbordComponent implements OnInit {
 
-  constructor(public apiService:ApiAppService) { }
-  
+  constructor(public apiService: ApiAppService) { } 
   
   ngOnInit(): void {
-    
     this.getUsers()
     this.getUserByEtat_p()
   }
