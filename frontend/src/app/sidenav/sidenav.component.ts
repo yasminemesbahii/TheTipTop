@@ -7,7 +7,7 @@ import { ServiceService } from 'src/service/service.service';
   styleUrls: ['./sidenav.component.less']
 })
 export class SidenavComponent implements OnInit {
-  sideBarOpen = true;
+  sideBarOpen = false;
   constructor(public service:ServiceService) { }
 
   ngOnInit(): void {

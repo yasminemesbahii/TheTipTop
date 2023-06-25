@@ -7,7 +7,7 @@ import { Component, OnInit  } from '@angular/core';
   styleUrls: ['./sidebar.component.less']
 })
 export class SidebarComponent implements OnInit {
-emailadmin:any=localStorage.getItem('emailAdmin')
+  emailadmin: any = localStorage.getItem('emailAdmin')
 
   constructor() { }
 
