@@ -149,5 +149,8 @@ myFunction() {
   }
 }
 
-
+  toggleNavigationMenu() {
+    var nav = document.getElementById("topNavigationbar").classList;
+    nav.contains("show") ? nav.remove("show") : nav.add("show");
+  }
 }
