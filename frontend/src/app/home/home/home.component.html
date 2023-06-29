@@ -44,9 +44,6 @@
             </button>
             <div class="collapse navbar-collapse" id="topNavigationbar">
               <ul class="navbar-nav">
-                <li class="nav-item" routerLink="/home">
-                  <!-- <a>Home</a> -->
-                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#About">A propos</a>
                 </li>
@@ -352,7 +349,7 @@
                 </div>
                 <div class="form-group">
                   <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" class="btn btn-default">Valider</button>
                   </div>
                 </div>
               </div>
@@ -393,11 +390,11 @@
   </footer>
   <div class="cookiebox" *ngIf="cookiebox">
     <div class="txtbox">
-      <span>en utilisant notre site, vous reconnaissez avoir lu et compris notre politique en matière de cookies, notre politique de confidentialité et nos conditions d'utilisation</span>
+      <span>En utilisant notre site, vous reconnaissez avoir lu et compris notre politique en matière de cookies, notre politique de confidentialité et nos conditions d'utilisation</span>
     </div>
     <div class="btnbox">
-      <button class="btn1" (click)="Decline()">Décline</button>
-      <button class="btn2" (click)="Allow()">Autorise les cookies</button>
+      <button class="btn1" (click)="Decline()">Refuser</button>
+      <button class="btn2" (click)="Allow()">Autoriser</button>
     </div>
   </div>
 </body>
