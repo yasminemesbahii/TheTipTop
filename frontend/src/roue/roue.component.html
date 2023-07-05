@@ -1,9 +1,9 @@
 <app-header></app-header>
 
 
-<div class="row align-items-center">
-  <div class="col-md-8">
-    <div class="center">
+<div class="d-flex flex-column flex-md-row justify-content-md-around align-items-center">
+  <div class="mt-5">
+    <div class="">
       <ngx-wheel #wheel
                  width='400'
                  height='400'
@@ -21,13 +21,13 @@
 
       <br />
 
-      <div>
+      <div class="text-center my-3">
         <button class="button-33" (click)="spin()">Jouer</button>
       </div>
     </div>
   </div>
 
-  <div class="col-md-4 text-left ps-4">
+  <div class="text-left ps-4">
     <div class="m-1">
       <p>Début du jeu:</p>
       <p>{{current}}</p>
@@ -48,7 +48,8 @@
         - Vous ne pourriez pas avoir le même lot plus d'une fois.<br>
         - Le numéro de votre ticket n'a qu'une seule utilisation.<br>
         - Faites attention à bien saisir les 10 chiffres du ticket.<br>
-        - Si votre ticket de caisse n'est pas supérieur à 49 euros, vous n'aurez pas la possibilité de jouer.<br>
+        - Si votre ticket de caisse n'est pas supérieur à 49 euros, <br>
+        vous n'aurez pas la possibilité de jouer.<br>
         Bonne chance!
       </p>
     </div>
