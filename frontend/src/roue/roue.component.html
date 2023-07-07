@@ -1,0 +1,65 @@
+<app-header></app-header>
+
+
+<div class="d-flex flex-column flex-md-row justify-content-md-around align-items-center">
+  <div class="mt-5">
+    <div class="">
+      <ngx-wheel #wheel
+                 width='400'
+                 height='400'
+                 spinDuration='8'
+                 [items]='items'
+                 [innerRadius]='20'
+                 [spinAmount]='10'
+                 [textOrientation]='textOrientation'
+                 [textAlignment]='textAlignment'
+                 pointerStrokeColor='red'
+                 pointerFillColor='gold'
+                 disableSpinOnClick='false'
+                 [idToLandOn]='idToLandOn'
+                 (onSpinComplete)='after()'></ngx-wheel>
+
+      <br />
+
+      <div class="text-center my-3">
+        <button class="button-33" (click)="spin()">Jouer</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-left ps-4">
+    <div class="m-1">
+      <div class="titre"><p>Début du jeu:</p></div>
+      <p>{{current}}</p>
+    </div>
+    <div class="m-1">
+      <div class="titre"><span>Date de fin du jeu:</span> </div>
+    </div>
+    <p>{{given}}</p>
+    <div class="m-1">
+      <div class="titre"><p>Il reste <span>{{delay}} jours</span> pour participer</p></div>
+    </div>
+
+    <div class="m-1">
+      <div class="titre2">
+        <p>
+          Attention!
+        </p>
+      </div>
+      <p>
+        - Vous ne pouvez gagner qu'un cadeau par tour.<br>
+        - Le numéro de votre ticket n'a qu'une seule utilisation.<br>
+        - Faites attention à bien saisir les 10 chiffres du ticket.<br>
+        - Si votre ticket de caisse n'est pas supérieur à 49 euros, <br>
+        vous n'aurez pas la possibilité de jouer.<br>
+        Bonne chance!
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+<app-footer></app-footer>
+
+
