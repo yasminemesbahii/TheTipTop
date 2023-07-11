@@ -31,7 +31,7 @@ export class RoueComponent implements OnInit {
   items: any[];
   Date:any=localStorage.getItem('Date')
   given = moment(this.Date, "YYYY-MM-DD");
-  current = moment().startOf('day');
+  current = moment().startOf('day').format('DD-MM-YYYY');
   iswheelcompleted: boolean = false;
   textOrientation: TextOrientation = TextOrientation.HORIZONTAL
   textAlignment: TextAlignment = TextAlignment.OUTER
