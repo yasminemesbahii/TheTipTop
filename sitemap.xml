@@ -2,97 +2,97 @@
 		
 		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-	<loc>https://f2i-ao21b-ym-mel.fr/</loc>
+	<loc>http://localhost:7777/</loc>
 	<lastmod>2023-05-05T20:03:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://f2i-ao21b-ym-mel.fr/roue</loc>
+	<loc>http://localhost:7777/roue</loc>
 	<lastmod>2023-05-05T20:03:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://f2i-ao21b-ym-mel.fr/celebration</loc>
+	<loc>http://localhost:7777/celebration</loc>
 	<lastmod>2023-05-05T20:03:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://f2i-ao21b-ym-mel.fr/user</loc>
+	<loc>http://localhost:7777/user</loc>
 	<lastmod>2023-05-05T20:03:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://f2i-ao21b-ym-mel.fr/employer</loc>
+	<loc>http://localhost:7777/employer</loc>
 	<lastmod>2023-05-05T20:03:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://f2i-ao21b-ym-mel.fr/subscribed</loc>
+	<loc>http://localhost:7777/subscribed</loc>
 	<lastmod>2023-05-05T20:03:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://f2i-ao21b-ym-mel.fr/statistique</loc>
+	<loc>http://localhost:7777/statistique</loc>
 	<lastmod>2023-05-05T20:03:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://f2i-ao21b-ym-mel.fr/login</loc>
+	<loc>http://localhost:7777/login</loc>
 	<lastmod>2023-05-05T20:03:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://f2i-ao21b-ym-mel.fr/sign-up</loc>
+	<loc>http://localhost:7777/sign-up</loc>
 	<lastmod>2023-05-05T20:03:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://f2i-ao21b-ym-mel.fr/AddEmp</loc>
+	<loc>http://localhost:7777/AddEmp</loc>
 	<lastmod>2023-05-05T20:03:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://f2i-ao21b-ym-mel.fr/NumeroT</loc>
+	<loc>http://localhost:7777/NumeroT</loc>
 	<lastmod>2023-05-05T20:03:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://f2i-ao21b-ym-mel.fr/MesGains</loc>
+	<loc>http://localhost:7777/MesGains</loc>
 	<lastmod>2023-05-05T20:03:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://f2i-ao21b-ym-mel.fr/Reclamation</loc>
+	<loc>http://localhost:7777/Reclamation</loc>
 	<lastmod>2023-05-05T20:03:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://f2i-ao21b-ym-mel.fr/ReclamationEMP</loc>
+	<loc>http://localhost:7777/ReclamationEMP</loc>
 	<lastmod>2023-05-05T20:03:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://f2i-ao21b-ym-mel.fr/ReseauxSo</loc>
+	<loc>http://localhost:7777/ReseauxSo</loc>
 	<lastmod>2023-05-05T20:03:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://f2i-ao21b-ym-mel.fr/home</loc>
+	<loc>http://localhost:7777/home</loc>
 	<lastmod>2023-05-05T20:03:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://f2i-ao21b-ym-mel.fr/admin</loc>
+	<loc>http://localhost:7777/admin</loc>
 	<lastmod>2023-05-05T20:03:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://f2i-ao21b-ym-mel.fr/Session</loc>
+	<loc>http://localhost:7777/Session</loc>
 	<lastmod>2023-05-05T20:03:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://f2i-ao21b-ym-mel.fr/Tirage</loc>
+	<loc>http://localhost:7777/Tirage</loc>
 	<lastmod>2023-05-05T20:03:03+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
