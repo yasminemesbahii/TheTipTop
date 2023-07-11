@@ -8,7 +8,7 @@ import { ServiceService } from 'src/service/service.service';
 })
 export class CeleComponent implements OnInit   {
   
-  //public iscompleted: boolean = false;
+  //public iscompleted: boolean = false; 
   constructor(public service:ServiceService) {
     
   }

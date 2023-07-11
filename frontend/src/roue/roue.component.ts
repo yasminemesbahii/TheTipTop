@@ -6,6 +6,7 @@ import { NgxWheelComponent, TextOrientation, TextAlignment  } from 'projects/ngx
 import { ServiceService } from 'src/service/service.service';
 import moment from 'moment';
 import swal from "sweetalert2";
+import { format } from 'path';
 @Component({
   selector: 'app-roue',
   templateUrl: './roue.component.html',
@@ -30,8 +31,8 @@ export class RoueComponent implements OnInit {
   conteurTicket:any = localStorage.getItem('counterTicket');
   items: any[];
   Date:any=localStorage.getItem('Date')
-  given = moment(this.Date, "YYYY-MM-DD");
-  current = moment().startOf('day').format('DD-MM-YYYY');
+  given = moment(this.Date, "YYYY-MM-DD").format('YYYY-MM-DD');
+  current = moment().startOf('day').format('YYYY-MM-DD');
   iswheelcompleted: boolean = false;
   textOrientation: TextOrientation = TextOrientation.HORIZONTAL
   textAlignment: TextAlignment = TextAlignment.OUTER
@@ -45,13 +46,7 @@ export class RoueComponent implements OnInit {
     // Add this ⤵️
     
   ngOnInit(){
-    //this.price=Math.round(Math.random() * (this.max - this.min) + this.min);
-    //this.getPrix()
-    this.delay=  moment.duration(this.given.diff(this.current)).asDays();
-    console.log(this.delay);
-    //this.service.loading()
-    //console.log(this.users)
-    //console.log()
+    this.delay=  new Date(this.given).getDate() - new Date(this.current).getDate();
     this.idToLandOn = this.seed[Math.round(Math.random() * this.seed.length)];
     const colors = ['#4c7faf', '#FF0000','#FF8C00','#9932CC','#00FF00']
     this.items = this.seed.map((value) => ({
