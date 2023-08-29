@@ -12,7 +12,7 @@ export class ServiceService {
   public iscompleted5: boolean = false;
   public Gain: any;
   //private baseUri: string = 'http://backend:7777';
-  private baseUri: string = 'http://localhost:7777/api';
+  private baseUri: string = 'https://f2i-ao21b-ym-mel.fr/api';
   constructor(private http: HttpClient, public spinner: NgxSpinnerService) {}
   /*getPrixBy__v(uid:any){
     return this.http.get(this.baseUri+'/users/'+ uid);
