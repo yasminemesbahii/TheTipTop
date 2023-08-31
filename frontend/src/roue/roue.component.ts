@@ -46,7 +46,7 @@ export class RoueComponent implements OnInit {
     // Add this ⤵️
     
   ngOnInit(){
-    this.delay=  new Date(this.given).getDate() - new Date(this.current).getDate();
+    this.delay=  new Date(this.current).getDate() - new Date(this.given).getDate();
     this.idToLandOn = this.seed[Math.round(Math.random() * this.seed.length)];
     const colors = ['#4c7faf', '#FF0000','#FF8C00','#9932CC','#00FF00']
     this.items = this.seed.map((value) => ({
